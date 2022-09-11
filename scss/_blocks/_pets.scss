@@ -1,0 +1,28 @@
+.pets{
+    padding: 83px 124px 83px 220px;
+    background-color: red;
+    &__block{
+        background-color: aqua;
+        display: flex;
+        flex-direction: column;
+    }
+    &__zoo{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__title{
+        @include Rubik24w4;
+        color: #19707D;
+    }
+    &__btn{
+        padding: 14px 30px;
+        background-color: bisque;
+        @include font518;
+        color: #19707D;
+        background-color: transparent;
+        border: 3px solid #19707D;
+        border-radius: 60px ;
+    }
+    
+}

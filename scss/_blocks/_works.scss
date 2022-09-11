@@ -1,0 +1,79 @@
+.works{
+    padding: 50px 124px 14px 219px ;
+    background-image: url(../../img/Illustrations.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 98px;
+    }
+    &__list{
+        
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 550px
+    }
+    &__title{
+        @include Rubik24w4;
+        text-transform: uppercase;
+        color: #0D444D;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    &__img{
+        width: 130px;
+        height: 130px;  
+        border-radius: 50%;
+        background-size: cover;
+
+    }
+    &__text{
+        @include roboto14w4;
+        text-align: center;
+        color: #0D444D;
+    }
+    
+}
+
+@media screen and (max-width:770px) {
+.works{
+    padding: 20px 28px 20px 20px;
+    background-image: url(../../img/Illustration1.svg);
+    
+    &__img{
+        width: 110px;
+        height: 110px;
+    }
+    &__text{
+        text-align: center;
+        width: 187px;
+    }
+    &__list{
+        margin-bottom: 350px;
+
+    }
+}    
+}
+
+@media screen and (max-width:420px){
+    .works{
+        padding: 50px 22px 200px 15px;
+        background-image: url(../../img/Illustration2.svg);
+        &__block{
+            gap: 30px;
+        }
+        &__list{
+            flex-direction: column;
+            gap: 40px;
+            margin-bottom: 200px;
+        }
+    }
+}
