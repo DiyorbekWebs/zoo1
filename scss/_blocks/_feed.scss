@@ -1,0 +1,79 @@
+.feed{
+    padding: 102px 124px 102px 220px;
+    background-image: url(../../img/payback.png);
+    background-size: 100%;
+    background-size: cover;
+
+
+    &__block{
+        display: flex;
+        flex-direction: column;
+        gap: 103px;
+    }
+    &__text{
+        @include Rubik24w4;
+    }
+    &__list{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    &__img{
+        background-color: rgb(255, 255, 255);
+       width: 145px;
+       height: 145px;
+       display: flex;
+       justify-content: center;
+       align-items: center;
+        border-radius: 100px;
+    }
+    &__box{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__btn{
+        padding: 14px 78px;
+        border: 3px solid #0D444D;
+        @include Rubik24w4;
+        color: #0D444D;
+        border-radius: 50px;
+    }
+    &__text1{
+        @include roboto14w4;
+        color: #C5E1E5;
+    }
+&__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+}
+@media screen and (max-width:770px) {
+    .feed{
+        padding: 40px 28px 30px 20px;
+        background-image: url(../../img/feed.png);
+        background-size: cover;
+        background-color: #0D444D;
+
+        &__img{
+            width: 113px;
+            height: 113px;
+        }
+    }
+}
+@media screen and (max-width:420px) {
+    .feed{
+        padding: 7px 22px 5px 15px;
+        background-image: url(../../img/feedphone.png);
+        background-color: transparent;
+
+        &__btn{
+            display: none;
+        }
+        &__list{
+            flex-direction: column;
+        }
+    }
+}

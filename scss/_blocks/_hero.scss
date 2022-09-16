@@ -1,7 +1,8 @@
 .hero {
     padding: 48px 124px 80px 219px;
-    background-image: url(../../img/heroback.svg);
-    background-size: 100%;
+    background-image: url(../../img/heroback.png);
+    background-size: cover;
+
     background-repeat: no-repeat;
 
     &__left {
@@ -65,8 +66,9 @@
 @media screen and (max-width:770px) {
     .hero {
         padding: 30px 28px 150px 20px;
-        background-image: url(../../img/tablet.svg);
-        background-size: 100%;
+        background-image: url(../../img/tablet.png);
+        background-size: cover;
+
         background-repeat: no-repeat;
         &__texts {
             gap: 20px;
@@ -117,8 +119,8 @@
 @media screen and (max-width:420px) {
     .hero{
         padding: 35px 22px 65px 15px;
-        background-size: 100%;
-        background-image: url(../../img/Vector\ 24.svg), url(../../img/Vector\ 25\ \(1\).svg);
+        background-size: cover;
+        background-image: url(../../img/vec1\ \(2\).png), url(../../img/vec1\ \(1\).png);
         &__left{
             flex-direction: column-reverse;
         }
